@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SCRIBE-ENGINE</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Scribe Archive Submission</h1>
+
+  <form id="reportForm">
+    <textarea name="description" placeholder="Describe the glitch or synchronicity..." required></textarea>
+    <input type="text" name="location" placeholder="Location (optional)" />
+    <select name="type" required>
+      <option value="glitch">Glitch</option>
+      <option value="synchronicity">Synchronicity</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Archived Reports</h2>
+  <ul id="reportList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
